@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1a328e4-b547-4881-9c70-22a9ec686451" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/step02/pom.xml" afterDir="false" />
+    <list default="true" id="b1a328e4-b547-4881-9c70-22a9ec686451" name="Changes" comment="complete 进一步完善Bean容器">
+      <change afterPath="$PROJECT_DIR$/step03/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
@@ -19,6 +18,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -49,7 +49,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/ray/Source/ray-spring/step02/src/test/java/cn/ray/springframework",
+    "last_opened_file_path": "/Users/ray/Source/ray-spring/step03/src/test/java/cn/ray/springframework",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -61,10 +61,29 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/step03/src/test/java/cn/ray/springframework" />
+      <recent name="$PROJECT_DIR$/step03/src/main/java/cn/ray/springframework" />
+      <recent name="$PROJECT_DIR$/step03/src/main/java" />
       <recent name="$PROJECT_DIR$/step02/src/test/java/cn/ray/springframework" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.ApiTest.test_beanFactory (1)">
+    <configuration name="ApiTest.test_beanFactory (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="step03" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.ray.springframework.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.ray.springframework" />
+      <option name="MAIN_CLASS_NAME" value="cn.ray.springframework.ApiTest" />
+      <option name="METHOD_NAME" value="test_beanFactory" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ApiTest.test_beanFactory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="step01" />
       <extension name="coverage">
@@ -113,8 +132,17 @@
       <option name="presentableId" value="Default" />
       <updated>1660468830312</updated>
       <workItem from="1660468832096" duration="4391000" />
-      <workItem from="1660551144996" duration="16486000" />
+      <workItem from="1660551144996" duration="16895000" />
+      <workItem from="1660649549218" duration="8432000" />
     </task>
+    <task id="LOCAL-00001" summary="complete 进一步完善Bean容器">
+      <created>1660570913914</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1660570913914</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,6 +158,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="complete 进一步完善Bean容器" />
+    <option name="LAST_COMMIT_MESSAGE" value="complete 进一步完善Bean容器" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
