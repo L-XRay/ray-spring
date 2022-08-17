@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1a328e4-b547-4881-9c70-22a9ec686451" name="Changes" comment="complete 对象实例化策略">
-      <change afterPath="$PROJECT_DIR$/step04/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="b1a328e4-b547-4881-9c70-22a9ec686451" name="Changes" comment="complete 注入属性和依赖对象">
+      <change beforePath="$PROJECT_DIR$/step04/src/test/java/cn/ray/springframework/bean/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/step04/src/test/java/cn/ray/springframework/bean/UserDao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +166,7 @@
       <workItem from="1660649549218" duration="8922000" />
       <workItem from="1660658687238" duration="2000" />
       <workItem from="1660717691471" duration="3168000" />
-      <workItem from="1660721859050" duration="6628000" />
+      <workItem from="1660721859050" duration="6870000" />
     </task>
     <task id="LOCAL-00001" summary="complete 进一步完善Bean容器">
       <created>1660570913914</created>
@@ -185,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660658330094</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="complete 注入属性和依赖对象">
+      <created>1660729319269</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1660729319269</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,7 +209,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="complete 进一步完善Bean容器" />
     <MESSAGE value="complete 对象实例化策略" />
-    <option name="LAST_COMMIT_MESSAGE" value="complete 对象实例化策略" />
+    <MESSAGE value="complete 注入属性和依赖对象" />
+    <option name="LAST_COMMIT_MESSAGE" value="complete 注入属性和依赖对象" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
