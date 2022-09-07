@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1a328e4-b547-4881-9c70-22a9ec686451" name="Changes" comment="complete 事件监听及发布">
-      <change afterPath="$PROJECT_DIR$/step11/pom.xml" afterDir="false" />
+    <list default="true" id="b1a328e4-b547-4881-9c70-22a9ec686451" name="Changes" comment="complete 基于JDK、Cglib动态代理实现AOP切面">
+      <change afterPath="$PROJECT_DIR$/step12/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
@@ -50,7 +50,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/ray/Source/ray-spring/step11/src/test/java/cn/ray/springframework/bean&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/ray/Source/ray-spring/step12/src/test/java/cn/ray/springframework&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -62,17 +62,36 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/step12/src/test/java/cn/ray/springframework" />
+      <recent name="$PROJECT_DIR$/step12/src/main/resources" />
+      <recent name="$PROJECT_DIR$/step12/src/main/java/cn/ray/springframework" />
       <recent name="$PROJECT_DIR$/step11/src/test/java/cn/ray/springframework/bean" />
       <recent name="$PROJECT_DIR$/step11/src/main/java/cn/ray/springframework" />
-      <recent name="$PROJECT_DIR$/step10/src/test/java/cn/ray/springframework" />
-      <recent name="$PROJECT_DIR$/step10/src/main/resources" />
-      <recent name="$PROJECT_DIR$/step10/src/main/java/cn/ray/springframework" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/step05/src/test/java" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.ray.springframework.bean" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.ApiTest.test_dynamic">
+  <component name="RunManager" selected="JUnit.ApiTest.test_aop (1)">
+    <configuration name="ApiTest.test_aop (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="step12" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.ray.springframework.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.ray.springframework" />
+      <option name="MAIN_CLASS_NAME" value="cn.ray.springframework.ApiTest" />
+      <option name="METHOD_NAME" value="test_aop" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ApiTest.test_aop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="step11" />
       <extension name="coverage">
@@ -84,6 +103,22 @@
       <option name="PACKAGE_NAME" value="cn.ray.springframework" />
       <option name="MAIN_CLASS_NAME" value="cn.ray.springframework.ApiTest" />
       <option name="METHOD_NAME" value="test_aop" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiTest.test_beforeAdvice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="step12" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.ray.springframework.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.ray.springframework" />
+      <option name="MAIN_CLASS_NAME" value="cn.ray.springframework.ApiTest" />
+      <option name="METHOD_NAME" value="test_beforeAdvice" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -121,45 +156,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApiTest.test_factory_bean" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="step09" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.ray.springframework.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cn.ray.springframework" />
-      <option name="MAIN_CLASS_NAME" value="cn.ray.springframework.ApiTest" />
-      <option name="METHOD_NAME" value="test_factory_bean" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ApiTest.test_prototype" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="step09" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.ray.springframework.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cn.ray.springframework" />
-      <option name="MAIN_CLASS_NAME" value="cn.ray.springframework.ApiTest" />
-      <option name="METHOD_NAME" value="test_prototype" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ApiTest.test_aop (1)" />
+        <item itemvalue="JUnit.ApiTest.test_beforeAdvice" />
         <item itemvalue="JUnit.ApiTest.test_dynamic" />
         <item itemvalue="JUnit.ApiTest.test_aop" />
         <item itemvalue="JUnit.ApiTest.test_event" />
-        <item itemvalue="JUnit.ApiTest.test_prototype" />
-        <item itemvalue="JUnit.ApiTest.test_factory_bean" />
       </list>
     </recent_temporary>
   </component>
@@ -190,7 +193,12 @@
       <workItem from="1662036009580" duration="10613000" />
       <workItem from="1662293019622" duration="19900000" />
       <workItem from="1662316527758" duration="602000" />
-      <workItem from="1662334410108" duration="317000" />
+      <workItem from="1662334410108" duration="353000" />
+      <workItem from="1662334779239" duration="132000" />
+      <workItem from="1662427762640" duration="1724000" />
+      <workItem from="1662463581662" duration="7004000" />
+      <workItem from="1662518994171" duration="12511000" />
+      <workItem from="1662558351964" duration="303000" />
     </task>
     <task id="LOCAL-00001" summary="complete 进一步完善Bean容器">
       <created>1660570913914</created>
@@ -262,7 +270,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662052154828</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="complete 基于JDK、Cglib动态代理实现AOP切面">
+      <created>1662334751866</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1662334751866</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,7 +304,8 @@
     <MESSAGE value="complete Aware容器感知" />
     <MESSAGE value="complete Bean作用域以及FactoryBean" />
     <MESSAGE value="complete 事件监听及发布" />
-    <option name="LAST_COMMIT_MESSAGE" value="complete 事件监听及发布" />
+    <MESSAGE value="complete 基于JDK、Cglib动态代理实现AOP切面" />
+    <option name="LAST_COMMIT_MESSAGE" value="complete 基于JDK、Cglib动态代理实现AOP切面" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -323,6 +339,11 @@
           <url>file://$PROJECT_DIR$/step10/src/test/java/cn/ray/springframework/ApiTest.java</url>
           <line>10</line>
           <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/step12/src/test/java/cn/ray/springframework/ApiTest.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
