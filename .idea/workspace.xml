@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1a328e4-b547-4881-9c70-22a9ec686451" name="Changes" comment="complete 基于JDK、Cglib动态代理实现AOP切面">
-      <change afterPath="$PROJECT_DIR$/step12/pom.xml" afterDir="false" />
+    <list default="true" id="b1a328e4-b547-4881-9c70-22a9ec686451" name="Changes" comment="complete 通过BeanPostProcessor将AOP融入Bean的生命周期">
+      <change afterPath="$PROJECT_DIR$/step13/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
@@ -20,6 +20,7 @@
       <list>
         <option value="FxmlFile" />
         <option value="Interface" />
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
@@ -43,39 +44,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/ray/Source/ray-spring/step12/src/test/java/cn/ray/springframework&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "/Users/ray/Source/ray-spring/step13/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/step13/src/main/resources" />
+      <recent name="$PROJECT_DIR$/step13/src/test/java/cn/ray/springframework" />
+      <recent name="$PROJECT_DIR$/step13/src/main/java/cn/ray/springframework" />
       <recent name="$PROJECT_DIR$/step12/src/test/java/cn/ray/springframework" />
       <recent name="$PROJECT_DIR$/step12/src/main/resources" />
-      <recent name="$PROJECT_DIR$/step12/src/main/java/cn/ray/springframework" />
-      <recent name="$PROJECT_DIR$/step11/src/test/java/cn/ray/springframework/bean" />
-      <recent name="$PROJECT_DIR$/step11/src/main/java/cn/ray/springframework" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/step13/src/test/resources" />
       <recent name="$PROJECT_DIR$/step05/src/test/java" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="cn.ray.springframework.bean" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ApiTest.test_aop (1)">
+  <component name="RunManager" selected="JUnit.ApiTest.test_scan">
     <configuration name="ApiTest.test_aop (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="step12" />
       <extension name="coverage">
@@ -93,10 +95,10 @@
       </method>
     </configuration>
     <configuration name="ApiTest.test_aop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="step11" />
+      <module name="step12" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.ray.springframework.*" />
+          <option name="PATTERN" value="cn.ray.springframework.bean.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -112,7 +114,7 @@
       <module name="step12" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.ray.springframework.*" />
+          <option name="PATTERN" value="cn.ray.springframework.bean.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -128,7 +130,7 @@
       <module name="step11" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.ray.springframework.*" />
+          <option name="PATTERN" value="cn.ray.springframework.bean.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -140,8 +142,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApiTest.test_event" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="step10" />
+    <configuration name="ApiTest.test_property" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="step13" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cn.ray.springframework.*" />
@@ -150,7 +152,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="cn.ray.springframework" />
       <option name="MAIN_CLASS_NAME" value="cn.ray.springframework.ApiTest" />
-      <option name="METHOD_NAME" value="test_event" />
+      <option name="METHOD_NAME" value="test_property" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiTest.test_scan" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="step13" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.ray.springframework.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.ray.springframework" />
+      <option name="MAIN_CLASS_NAME" value="cn.ray.springframework.ApiTest" />
+      <option name="METHOD_NAME" value="test_scan" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -158,11 +176,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ApiTest.test_scan" />
+        <item itemvalue="JUnit.ApiTest.test_property" />
         <item itemvalue="JUnit.ApiTest.test_aop (1)" />
         <item itemvalue="JUnit.ApiTest.test_beforeAdvice" />
         <item itemvalue="JUnit.ApiTest.test_dynamic" />
-        <item itemvalue="JUnit.ApiTest.test_aop" />
-        <item itemvalue="JUnit.ApiTest.test_event" />
       </list>
     </recent_temporary>
   </component>
@@ -198,7 +216,8 @@
       <workItem from="1662427762640" duration="1724000" />
       <workItem from="1662463581662" duration="7004000" />
       <workItem from="1662518994171" duration="12511000" />
-      <workItem from="1662558351964" duration="303000" />
+      <workItem from="1662558351964" duration="392000" />
+      <workItem from="1662896064219" duration="15538000" />
     </task>
     <task id="LOCAL-00001" summary="complete 进一步完善Bean容器">
       <created>1660570913914</created>
@@ -277,7 +296,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662334751866</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="complete 通过BeanPostProcessor将AOP融入Bean的生命周期">
+      <created>1662558734833</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1662558734833</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -305,7 +331,8 @@
     <MESSAGE value="complete Bean作用域以及FactoryBean" />
     <MESSAGE value="complete 事件监听及发布" />
     <MESSAGE value="complete 基于JDK、Cglib动态代理实现AOP切面" />
-    <option name="LAST_COMMIT_MESSAGE" value="complete 基于JDK、Cglib动态代理实现AOP切面" />
+    <MESSAGE value="complete 通过BeanPostProcessor将AOP融入Bean的生命周期" />
+    <option name="LAST_COMMIT_MESSAGE" value="complete 通过BeanPostProcessor将AOP融入Bean的生命周期" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
