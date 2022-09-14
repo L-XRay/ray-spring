@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1a328e4-b547-4881-9c70-22a9ec686451" name="Changes" comment="complete 通过BeanPostProcessor将AOP融入Bean的生命周期">
-      <change afterPath="$PROJECT_DIR$/step13/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="b1a328e4-b547-4881-9c70-22a9ec686451" name="Changes" comment="complete 自动扫描Bean对象注册">
+      <change beforePath="$PROJECT_DIR$/step13/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/step13/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,14 +48,15 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/ray/Source/ray-spring/step13/src/main/resources",
+    "last_opened_file_path": "/Users/ray/Source/ray-spring",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "spring.configuration.checksum": "30f9d5c0ad03680949c37d1c0bc56227"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -218,6 +216,7 @@
       <workItem from="1662518994171" duration="12511000" />
       <workItem from="1662558351964" duration="392000" />
       <workItem from="1662896064219" duration="15538000" />
+      <workItem from="1663141616369" duration="351000" />
     </task>
     <task id="LOCAL-00001" summary="complete 进一步完善Bean容器">
       <created>1660570913914</created>
@@ -303,7 +302,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662558734833</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="complete 自动扫描Bean对象注册">
+      <created>1663141697785</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1663141697785</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -332,7 +338,8 @@
     <MESSAGE value="complete 事件监听及发布" />
     <MESSAGE value="complete 基于JDK、Cglib动态代理实现AOP切面" />
     <MESSAGE value="complete 通过BeanPostProcessor将AOP融入Bean的生命周期" />
-    <option name="LAST_COMMIT_MESSAGE" value="complete 通过BeanPostProcessor将AOP融入Bean的生命周期" />
+    <MESSAGE value="complete 自动扫描Bean对象注册" />
+    <option name="LAST_COMMIT_MESSAGE" value="complete 自动扫描Bean对象注册" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
