@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b1a328e4-b547-4881-9c70-22a9ec686451" name="Changes" comment="complete 自动扫描Bean对象注册">
-      <change beforePath="$PROJECT_DIR$/step13/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/step13/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/step14/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,12 +51,12 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/ray/Source/ray-spring",
+    "last_opened_file_path": "/Users/ray/Source/ray-spring/step14/src/test/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "spring.configuration.checksum": "30f9d5c0ad03680949c37d1c0bc56227"
@@ -61,13 +64,14 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/step14/src/test/resources" />
+      <recent name="$PROJECT_DIR$/step14/src/test/java/cn/ray/springframework" />
+      <recent name="$PROJECT_DIR$/step14/src/main/java/cn/ray/springframework" />
       <recent name="$PROJECT_DIR$/step13/src/main/resources" />
       <recent name="$PROJECT_DIR$/step13/src/test/java/cn/ray/springframework" />
-      <recent name="$PROJECT_DIR$/step13/src/main/java/cn/ray/springframework" />
-      <recent name="$PROJECT_DIR$/step12/src/test/java/cn/ray/springframework" />
-      <recent name="$PROJECT_DIR$/step12/src/main/resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/step13" />
       <recent name="$PROJECT_DIR$/step13/src/test/resources" />
       <recent name="$PROJECT_DIR$/step05/src/test/java" />
     </key>
@@ -75,28 +79,12 @@
       <recent name="cn.ray.springframework.bean" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ApiTest.test_scan">
+  <component name="RunManager" selected="JUnit.ApiTest.test_scan (1)">
     <configuration name="ApiTest.test_aop (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="step12" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cn.ray.springframework.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cn.ray.springframework" />
-      <option name="MAIN_CLASS_NAME" value="cn.ray.springframework.ApiTest" />
-      <option name="METHOD_NAME" value="test_aop" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ApiTest.test_aop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="step12" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.ray.springframework.bean.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,22 +112,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApiTest.test_dynamic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="step11" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.ray.springframework.bean.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cn.ray.springframework" />
-      <option name="MAIN_CLASS_NAME" value="cn.ray.springframework.ApiTest" />
-      <option name="METHOD_NAME" value="test_dynamic" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ApiTest.test_property" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="step13" />
       <extension name="coverage">
@@ -151,6 +123,22 @@
       <option name="PACKAGE_NAME" value="cn.ray.springframework" />
       <option name="MAIN_CLASS_NAME" value="cn.ray.springframework.ApiTest" />
       <option name="METHOD_NAME" value="test_property" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiTest.test_scan (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="step14" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.ray.springframework.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.ray.springframework" />
+      <option name="MAIN_CLASS_NAME" value="cn.ray.springframework.ApiTest" />
+      <option name="METHOD_NAME" value="test_scan" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -174,11 +162,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ApiTest.test_scan" />
+        <item itemvalue="JUnit.ApiTest.test_scan (1)" />
         <item itemvalue="JUnit.ApiTest.test_property" />
+        <item itemvalue="JUnit.ApiTest.test_scan" />
         <item itemvalue="JUnit.ApiTest.test_aop (1)" />
         <item itemvalue="JUnit.ApiTest.test_beforeAdvice" />
-        <item itemvalue="JUnit.ApiTest.test_dynamic" />
       </list>
     </recent_temporary>
   </component>
@@ -216,7 +204,8 @@
       <workItem from="1662518994171" duration="12511000" />
       <workItem from="1662558351964" duration="392000" />
       <workItem from="1662896064219" duration="15538000" />
-      <workItem from="1663141616369" duration="351000" />
+      <workItem from="1663141616369" duration="753000" />
+      <workItem from="1663232006367" duration="21214000" />
     </task>
     <task id="LOCAL-00001" summary="complete 进一步完善Bean容器">
       <created>1660570913914</created>
@@ -309,7 +298,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663141697785</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="complete 自动扫描Bean对象注册">
+      <created>1663141973604</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1663141973604</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -378,6 +374,11 @@
           <url>file://$PROJECT_DIR$/step12/src/test/java/cn/ray/springframework/ApiTest.java</url>
           <line>28</line>
           <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/step14/src/test/java/cn/ray/springframework/ApiTest.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
