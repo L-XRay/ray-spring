@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1a328e4-b547-4881-9c70-22a9ec686451" name="Changes" comment="complete Bean属性的注解注入">
-      <change afterPath="$PROJECT_DIR$/step15/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="b1a328e4-b547-4881-9c70-22a9ec686451" name="Changes" comment="complete AOP代理对象融入Bean的生命周期">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/step15/src/main/java/cn/ray/springframework/aop/framework/autoproxy/DefaultAdvisorAutoProxyCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/step15/src/main/java/cn/ray/springframework/aop/framework/autoproxy/DefaultAdvisorAutoProxyCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/step15/src/test/java/cn/ray/springframework/bean/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/step15/src/test/java/cn/ray/springframework/bean/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,7 +206,7 @@
       <workItem from="1663141616369" duration="753000" />
       <workItem from="1663232006367" duration="21422000" />
       <workItem from="1663336277867" duration="6791000" />
-      <workItem from="1663501957239" duration="345000" />
+      <workItem from="1663501957239" duration="7636000" />
     </task>
     <task id="LOCAL-00001" summary="complete 进一步完善Bean容器">
       <created>1660570913914</created>
@@ -314,7 +313,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663257316830</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="complete AOP代理对象融入Bean的生命周期">
+      <created>1663502344094</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1663502344094</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -345,7 +351,8 @@
     <MESSAGE value="complete 通过BeanPostProcessor将AOP融入Bean的生命周期" />
     <MESSAGE value="complete 自动扫描Bean对象注册" />
     <MESSAGE value="complete Bean属性的注解注入" />
-    <option name="LAST_COMMIT_MESSAGE" value="complete Bean属性的注解注入" />
+    <MESSAGE value="complete AOP代理对象融入Bean的生命周期" />
+    <option name="LAST_COMMIT_MESSAGE" value="complete AOP代理对象融入Bean的生命周期" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -389,11 +396,6 @@
           <url>file://$PROJECT_DIR$/step14/src/test/java/cn/ray/springframework/ApiTest.java</url>
           <line>10</line>
           <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/step15/src/test/java/cn/ray/springframework/ApiTest.java</url>
-          <line>10</line>
-          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

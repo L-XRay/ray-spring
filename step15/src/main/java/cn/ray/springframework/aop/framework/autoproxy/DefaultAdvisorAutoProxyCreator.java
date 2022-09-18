@@ -43,7 +43,7 @@ public class DefaultAdvisorAutoProxyCreator implements BeanFactoryAware,Instanti
 
     @Override
     public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
-        if (isInfrastructureClass(bean.getClass())) return null;
+        if (isInfrastructureClass(bean.getClass())) return bean;
 
         Collection<AspectJExpressionPointcutAdvisor> advisors = beanFactory.getBeansOfType(AspectJExpressionPointcutAdvisor.class).values();
 
@@ -53,12 +53,7 @@ public class DefaultAdvisorAutoProxyCreator implements BeanFactoryAware,Instanti
 
             AdvisedSupport advisedSupport = new AdvisedSupport();
 
-            TargetSource targetSource = null;
-            try {
-                targetSource = new TargetSource(bean.getClass().getDeclaredConstructor().newInstance());
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
+            TargetSource targetSource = new TargetSource(bean);
             advisedSupport.setTargetSource(targetSource);
             advisedSupport.setMethodInterceptor((MethodInterceptor) advisor.getAdvice());
             advisedSupport.setMethodMatcher(advisor.getPointcut().getMethodMatcher());

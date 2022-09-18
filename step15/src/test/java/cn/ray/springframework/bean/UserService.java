@@ -12,7 +12,7 @@ public class UserService implements IUserService {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        return "Ray，100001，重庆" + token;
+        return "Ray，100001，重庆," + token;
     }
 
     public String register(String userName) {
