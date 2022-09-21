@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1a328e4-b547-4881-9c70-22a9ec686451" name="Changes" comment="fix DefaultAdvisorAutoProxyCreator 配置 targetSource = new TargetSource(bean);">
-      <change afterPath="$PROJECT_DIR$/step16/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="b1a328e4-b547-4881-9c70-22a9ec686451" name="Changes" comment="To repair 三级缓存解决循环依赖：com.sun.proxy.$Proxy3 cannot be cast to cn.ray.springframework.bean.Wife ； Error setting property values：wife">
+      <change afterPath="$PROJECT_DIR$/step17/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
@@ -21,8 +20,8 @@
       <list>
         <option value="FxmlFile" />
         <option value="AnnotationType" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -45,33 +44,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/ray/Source/ray-spring/step16/src/test/resources&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;30f9d5c0ad03680949c37d1c0bc56227&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "/Users/ray/Source/ray-spring/step17/src/test/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.ignored.files",
+    "spring.configuration.checksum": "30f9d5c0ad03680949c37d1c0bc56227"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/step17/src/test/resources" />
+      <recent name="$PROJECT_DIR$/step17/src/test/java/cn/ray/springframework" />
+      <recent name="$PROJECT_DIR$/step17/src/main/java/cn/ray/springframework" />
       <recent name="$PROJECT_DIR$/step16/src/test/resources" />
       <recent name="$PROJECT_DIR$/step16/src/test/java/cn/ray/springframework" />
-      <recent name="$PROJECT_DIR$/step16/src/main/java/cn/ray/springframework" />
-      <recent name="$PROJECT_DIR$/step15/src/test/resources" />
-      <recent name="$PROJECT_DIR$/step15/src/test/java/cn/ray/springframework" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/step17" />
       <recent name="$PROJECT_DIR$/step13" />
       <recent name="$PROJECT_DIR$/step13/src/test/resources" />
       <recent name="$PROJECT_DIR$/step05/src/test/java" />
@@ -80,7 +81,39 @@
       <recent name="cn.ray.springframework.bean" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ApiTest.test_circular">
+  <component name="RunManager" selected="JUnit.ApiTest.test_StringToNumberConverterFactory">
+    <configuration name="ApiTest.test_StringToIntegerConverter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="step17" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.ray.springframework.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.ray.springframework" />
+      <option name="MAIN_CLASS_NAME" value="cn.ray.springframework.ApiTest" />
+      <option name="METHOD_NAME" value="test_StringToIntegerConverter" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiTest.test_StringToNumberConverterFactory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="step17" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.ray.springframework.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.ray.springframework" />
+      <option name="MAIN_CLASS_NAME" value="cn.ray.springframework.ApiTest" />
+      <option name="METHOD_NAME" value="test_StringToNumberConverterFactory" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ApiTest.test_autoProxy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="step15" />
       <extension name="coverage">
@@ -113,8 +146,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApiTest.test_property" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="step13" />
+    <configuration name="ApiTest.test_convert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="step17" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cn.ray.springframework.*" />
@@ -123,39 +156,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="cn.ray.springframework" />
       <option name="MAIN_CLASS_NAME" value="cn.ray.springframework.ApiTest" />
-      <option name="METHOD_NAME" value="test_property" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ApiTest.test_scan (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="step14" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.ray.springframework.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cn.ray.springframework" />
-      <option name="MAIN_CLASS_NAME" value="cn.ray.springframework.ApiTest" />
-      <option name="METHOD_NAME" value="test_scan" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ApiTest.test_scan" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="step13" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.ray.springframework.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cn.ray.springframework" />
-      <option name="MAIN_CLASS_NAME" value="cn.ray.springframework.ApiTest" />
-      <option name="METHOD_NAME" value="test_scan" />
+      <option name="METHOD_NAME" value="test_convert" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -163,11 +164,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ApiTest.test_StringToNumberConverterFactory" />
+        <item itemvalue="JUnit.ApiTest.test_StringToIntegerConverter" />
+        <item itemvalue="JUnit.ApiTest.test_convert" />
         <item itemvalue="JUnit.ApiTest.test_circular" />
         <item itemvalue="JUnit.ApiTest.test_autoProxy" />
-        <item itemvalue="JUnit.ApiTest.test_scan (1)" />
-        <item itemvalue="JUnit.ApiTest.test_property" />
-        <item itemvalue="JUnit.ApiTest.test_scan" />
       </list>
     </recent_temporary>
   </component>
@@ -211,7 +212,8 @@
       <workItem from="1663501957239" duration="7769000" />
       <workItem from="1663580495637" duration="1231000" />
       <workItem from="1663582309075" duration="6177000" />
-      <workItem from="1663752880217" duration="3652000" />
+      <workItem from="1663752880217" duration="4935000" />
+      <workItem from="1663760160889" duration="6670000" />
     </task>
     <task id="LOCAL-00001" summary="complete 进一步完善Bean容器">
       <created>1660570913914</created>
@@ -332,7 +334,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663514089722</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="To repair 三级缓存解决循环依赖：com.sun.proxy.$Proxy3 cannot be cast to cn.ray.springframework.bean.Wife ； Error setting property values：wife">
+      <created>1663756821633</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1663756821633</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -365,7 +374,8 @@
     <MESSAGE value="complete Bean属性的注解注入" />
     <MESSAGE value="complete AOP代理对象融入Bean的生命周期" />
     <MESSAGE value="fix DefaultAdvisorAutoProxyCreator 配置 targetSource = new TargetSource(bean);" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix DefaultAdvisorAutoProxyCreator 配置 targetSource = new TargetSource(bean);" />
+    <MESSAGE value="To repair 三级缓存解决循环依赖：com.sun.proxy.$Proxy3 cannot be cast to cn.ray.springframework.bean.Wife ； Error setting property values：wife" />
+    <option name="LAST_COMMIT_MESSAGE" value="To repair 三级缓存解决循环依赖：com.sun.proxy.$Proxy3 cannot be cast to cn.ray.springframework.bean.Wife ； Error setting property values：wife" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
