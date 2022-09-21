@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1a328e4-b547-4881-9c70-22a9ec686451" name="Changes" comment="complete AOP代理对象融入Bean的生命周期">
+    <list default="true" id="b1a328e4-b547-4881-9c70-22a9ec686451" name="Changes" comment="fix DefaultAdvisorAutoProxyCreator 配置 targetSource = new TargetSource(bean);">
+      <change afterPath="$PROJECT_DIR$/step16/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step15/src/main/java/cn/ray/springframework/aop/framework/autoproxy/DefaultAdvisorAutoProxyCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/step15/src/main/java/cn/ray/springframework/aop/framework/autoproxy/DefaultAdvisorAutoProxyCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step15/src/test/java/cn/ray/springframework/bean/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/step15/src/test/java/cn/ray/springframework/bean/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,9 +20,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
-        <option value="Interface" />
         <option value="AnnotationType" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -50,7 +52,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/ray/Source/ray-spring/step15/src/test/resources&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/ray/Source/ray-spring/step16/src/test/resources&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -63,11 +65,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/step16/src/test/resources" />
+      <recent name="$PROJECT_DIR$/step16/src/test/java/cn/ray/springframework" />
+      <recent name="$PROJECT_DIR$/step16/src/main/java/cn/ray/springframework" />
       <recent name="$PROJECT_DIR$/step15/src/test/resources" />
       <recent name="$PROJECT_DIR$/step15/src/test/java/cn/ray/springframework" />
-      <recent name="$PROJECT_DIR$/step15/src/main/java/cn/ray/springframework" />
-      <recent name="$PROJECT_DIR$/step14/src/test/resources" />
-      <recent name="$PROJECT_DIR$/step14/src/test/java/cn/ray/springframework" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/step13" />
@@ -78,23 +80,7 @@
       <recent name="cn.ray.springframework.bean" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ApiTest.test_autoProxy">
-    <configuration name="ApiTest.test_aop (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="step12" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.ray.springframework.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cn.ray.springframework" />
-      <option name="MAIN_CLASS_NAME" value="cn.ray.springframework.ApiTest" />
-      <option name="METHOD_NAME" value="test_aop" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ApiTest.test_circular">
     <configuration name="ApiTest.test_autoProxy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="step15" />
       <extension name="coverage">
@@ -106,6 +92,22 @@
       <option name="PACKAGE_NAME" value="cn.ray.springframework" />
       <option name="MAIN_CLASS_NAME" value="cn.ray.springframework.ApiTest" />
       <option name="METHOD_NAME" value="test_autoProxy" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiTest.test_circular" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="step16" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.ray.springframework.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.ray.springframework" />
+      <option name="MAIN_CLASS_NAME" value="cn.ray.springframework.ApiTest" />
+      <option name="METHOD_NAME" value="test_circular" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -161,11 +163,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ApiTest.test_circular" />
         <item itemvalue="JUnit.ApiTest.test_autoProxy" />
         <item itemvalue="JUnit.ApiTest.test_scan (1)" />
         <item itemvalue="JUnit.ApiTest.test_property" />
         <item itemvalue="JUnit.ApiTest.test_scan" />
-        <item itemvalue="JUnit.ApiTest.test_aop (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -206,7 +208,10 @@
       <workItem from="1663141616369" duration="753000" />
       <workItem from="1663232006367" duration="21422000" />
       <workItem from="1663336277867" duration="6791000" />
-      <workItem from="1663501957239" duration="7636000" />
+      <workItem from="1663501957239" duration="7769000" />
+      <workItem from="1663580495637" duration="1231000" />
+      <workItem from="1663582309075" duration="6177000" />
+      <workItem from="1663752880217" duration="3652000" />
     </task>
     <task id="LOCAL-00001" summary="complete 进一步完善Bean容器">
       <created>1660570913914</created>
@@ -320,7 +325,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663502344094</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="fix DefaultAdvisorAutoProxyCreator 配置 targetSource = new TargetSource(bean);">
+      <created>1663514089722</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1663514089722</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -352,7 +364,8 @@
     <MESSAGE value="complete 自动扫描Bean对象注册" />
     <MESSAGE value="complete Bean属性的注解注入" />
     <MESSAGE value="complete AOP代理对象融入Bean的生命周期" />
-    <option name="LAST_COMMIT_MESSAGE" value="complete AOP代理对象融入Bean的生命周期" />
+    <MESSAGE value="fix DefaultAdvisorAutoProxyCreator 配置 targetSource = new TargetSource(bean);" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix DefaultAdvisorAutoProxyCreator 配置 targetSource = new TargetSource(bean);" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -396,6 +409,11 @@
           <url>file://$PROJECT_DIR$/step14/src/test/java/cn/ray/springframework/ApiTest.java</url>
           <line>10</line>
           <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/step16/src/test/java/cn/ray/springframework/ApiTest.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
